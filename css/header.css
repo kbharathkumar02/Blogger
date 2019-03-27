@@ -1,2 +1,41 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header {
+}
+
+.header .page-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    float: left;
+    font-family: Satisfy, cursive;
+    margin-left: 5px;
+}
+
+.header .page-title .title {
+    font-size: 40px;
+    color:  mediumblue;
+}
+
+.header .page-title .sub-heading {
+    font-size: 15px;
+}
+
+.header .login {
+    float: right;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.header .login button {
+    color: white;
+    background-color: blue;
+    padding: 8px 17px;
+    border-width: 1.5px;
+    text-align: center;
+    font-size: small;
+}
+
+.header .login .sign-in {
+    margin-right: 5px;
+}
