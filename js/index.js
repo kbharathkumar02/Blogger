@@ -19,5 +19,5 @@ window.onclick = function(event) {
 }
 
 document.getElementById("allPosts").onclick = function () {
-    location.href = "/Blogger/html/bloglist.html?_ijt=kblbrtn9lccknr14a38vs2u8vu";
+    location.href = "/Blogger/html/bloglist.html";
 };

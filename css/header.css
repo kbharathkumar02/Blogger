@@ -8,17 +8,19 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     flex-direction: column;
     justify-content: flex-end;
     float: left;
-    font-family: Satisfy, cursive;
     margin-left: 5px;
 }
 
 .header .page-title .title {
     font-size: 40px;
     color:  mediumblue;
+    font-family: Satisfy, cursive;
 }
 
 .header .page-title .sub-heading {
     font-size: 15px;
+    font-weight: lighter;
+    font-family: Satisfy, cursive;
 }
 
 .header .login {
@@ -30,10 +32,11 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 .header .login button {
     color: white;
     background-color: blue;
-    padding: 8px 17px;
+    padding: 10px 17px;
     border-width: 1.5px;
     text-align: center;
-    font-size: small;
+    font-size: smaller;
+    font-weight: normal;
 }
 
 .header .login .sign-in {
@@ -62,7 +65,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     padding: 0 15px 1px 15px;
     border: 1px solid #888;
     width: 22%;
-    min-height: 40%;
+    min-height: 70%;
 }
 
 /* The Close Button */
@@ -85,7 +88,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     color: #fff;
     padding: 4%;
     font-size: smaller;
-    margin-top: 20px;
+    margin-top: 30px;
     border-width: 0px;
     cursor: pointer;
 }
@@ -97,10 +100,11 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 }
 
 label {
-    font-size: 13px;
-    font-weight: bolder;
     margin-top: 10px;
-    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
 }
 
 .modal-title {
@@ -114,15 +118,28 @@ form {
 
 h2 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Abel', sans-serif;
 }
 
 h4 {
-    margin: 20px;
+    margin: 40px 20px;
     text-align: center;
-    font-family: sans-serif;
+    font-family:'Abel', sans-serif;
 }
 .sign-up-link {
     color: blue;
     cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-family:'Abel', sans-serif;
+}
+::-moz-placeholder {
+    font-family:'Abel', sans-serif;
+}
+:-ms-input-placeholder {
+    font-family:'Abel', sans-serif;
+}
+::placeholder {
+    font-family:'Abel', sans-serif;
 }
