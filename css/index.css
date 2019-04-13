@@ -8,7 +8,7 @@ body{
    background-size: 100% cover!important;
    overflow:hidden;
    display: block;
-} 
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
 .postButtons {
@@ -35,11 +35,11 @@ button {
    border-width: 0px;
    cursor: pointer;
    width: 100px;
-   margin-left: 400px;
+   margin-left: 40%;
 }
 
 .textarea-content {
-   width: 780px;
+   width: 95%;
    height: 300px;
    background-color: #E8E8E8;
 }
@@ -54,7 +54,7 @@ button {
 }
 
 .post-title {
-   width: 400px;
+   width: 46%;
    background-color: #E8E8E8;
    border-width: 0;
    padding: 10px;
