@@ -1,64 +1,189 @@
-.post {
-    position: relative;
-    width: 90%;
-    height: 20%;
-    background: #fff;
-    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
-    float:left;
-    border-radius: 15px;
-}
-    
-.post-left {
-        width: 15%;            
-        max-width: 15%;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        font-weight: bold;
-        color: #000;
-}
-.post-content {
-        width: 75%;           
-        display: table-cell;
-        text-align: left;
-        background-color: #E8E8E8;
-        color: #000000;
-        border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
-}
-.post-title{
-    font-family: 'Itim', cursive;
-    font-weight: bold;
-    color: #2b312b;
-    font-size: 25px;
-    height: 25px;
-    }
-.post-more {
-    float: right;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-.post-desc{
-    height: 100px;
-    margin-bottom: 0 !important;
-}
-
 body {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 0 !important;
-    color: #fff;
-    background-color: orange;
-    background-size: 2000% 2000%;
+  background-color: orange;
+  background-size: 100% 100%;
+  display: block;
+  height: 100%;
+  margin: 0 !important;
+  position: relative;
+  width: 100%;
 }
-.allPostsContainer {
-    height: 100%;
-    width: 100%;
 
+button {
+  background-color: gold;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px;
+}
+
+.post-title {
+  background-color: #E8E8E8;
+  border-width: 0;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 65%;
+  overflow: hidden;
+}
+
+.allPostsContainer {
+  height: 80%;
+  width: 100%;
+}
+
+.post {
+  background: orange;
+  border-radius: 15px;
+  display: inline-block;
+  float: center;
+  height: 20%;
+  margin: 2% 2% 2% 2%;
+  position: relative;
+  width: 45%;
+}
+
+.post-left {
+  background: #fff;
+  border-radius: 15px 0 0 15px;
+  color: #000;
+  display: table-cell;
+  font-weight: bold;
+  max-width: 15%;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+}
+
+.post-content {
+   border-radius: 0 15px 15px 0;
+   background-color: #E8E8E8;
+   color: #000000;
+   display: table-cell;
+   text-align: left;
+   padding: 0 20px;
+   width: 75%;
+}
+
+.post-delete {
+  background-color: #E8E8E8;
+  color: #000000;
+  cursor: pointer;
+  display: table-cell;
+  float: right;
+  padding: 2% 2%;
+  text-align: right;
+  vertical-align: top;
+
+}
+
+.post-title{
+  color: #2b312b;
+  font-family: 'Itim', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  height: 25px;
+  width: 65%;
+  overflow: hidden;
+}
+
+.post-more {
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  font-size: 18px;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 10px;
+}
+
+.post-ellipsis {
+  cursor: pointer;
+  color: #000;
+  display: table-cell;
+  float: right;
+  font-weight: bold;
+  font-size: 18px;
+  max-width: 5%;
+  text-align: center;
+  vertical-align: middle;
+  width: 5%;
+}
+
+.post-desc {
+  height: 100px;
+  padding: 0% 0% 2% 0%;
+  width: 65%;
+  overflow: hidden;
+}
+
+.blog-list-modal {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  height: 100%; /* Full height */
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 100px; /* Location of the box */
+  position: fixed; /* Stay in place */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1; /* Sit on top */
+}
+
+/* Modal Content */
+.blog-list-modal-content {
+  align: center;
+  background-color: white;
+  float: top;
+  height: 15%;
+  margin: auto;
+  padding: 2%;
+  width: 25%;
+}
+
+.blog-modal-text {
+  background-color: white;
+  float:center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+  font-family: 'Abel', sans-serif;
+}
+
+#blog-list-modal-btn-grp {
+  float: center;
+  height:20%;
+  margin: 5% 5%;
+  width:90%;
+}
+
+.delete-post-modal-yes {
+  background-color: red;
+  border:0;
+  color: white;
+  font-weight: normal;
+  float: left;
+  margin: 2.5% 2.5%;
+  padding: 1% 1%;
+  text-align: center;
+  width:20%;
+}
+
+.delete-post-modal-no {
+  background-color: green;
+  color: white;
+  padding: 1% 1%;
+  text-align: center;
+  margin: 2.5% 2.5%;
+  border:0;
+  float: right;
+  width:20%;
+  font-weight: normal;
+}
+
+.row{
+    height: 20%;
+    float: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
