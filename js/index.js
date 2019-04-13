@@ -4,20 +4,18 @@ var btnCreatePost = document.getElementById("btnCreatePost");
 
 var span = document.getElementById("closePostModal");
 
+//Display Create Post Model
 btnCreatePost.onclick = function() {
     modalCreatePost.style.display = "block";
 }
 
+//Close the modal
 span.onclick = function() {
     modalCreatePost.style.display = "none";
 }
 
-window.onclick = function(event) {
-    if (event.target == modalCreatePost) {
-        modalCreatePost.style.display = "none";
-    }
-}
-
+//Redirect to bloglist
 document.getElementById("allPosts").onclick = function () {
-    location.href = "/Blogger/html/bloglist.html";
+    var blogPage="bloglist.html";
+    document.location.href = "\html/"+blogPage;
 };
