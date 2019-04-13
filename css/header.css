@@ -1,2 +1,145 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.header {
+}
+
+.header .page-title {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: flex-end;
+  margin-left: 5px;
+}
+
+.header .page-title .title {
+  color:  mediumblue;
+  font-family: Satisfy, cursive;
+  font-size: 40px;
+}
+
+.header .page-title .sub-heading {
+  font-family: Satisfy, cursive;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.header .login {
+  float: right;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.header .login button {
+  background-color: blue;
+  border-width: 1.5px;
+  color: white;
+  font-size: smaller;
+  font-weight: normal;
+  padding: 10px 17px;
+  text-align: center;
+}
+
+.header .login .sign-in {
+  margin-right: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  height: 100%; /* Full height */
+  left: 0;
+  overflow: auto; /* Enable scroll if needed */
+  position: fixed; /* Stay in place */
+  padding-top: 100px; /* Location of the box */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1; /* Sit on top */
+}
+
+/* Modal Content */
+.header-modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  margin: auto;
+  min-height: 70%;
+  padding: 0 15px 1px 15px;
+  width: 22%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: rgb(34,174,34);
+  border-width: 0px;
+  color: #fff;
+  cursor: pointer;
+  font-size: smaller;
+  margin-top: 30px;
+  padding: 4%;
+}
+
+.header-input {
+  background-color: #E8E8E8;
+  border-width: 0px;
+  padding: 3%;
+}
+
+label {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  alignment: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+}
+
+h4 {
+  margin: 40px 20px;
+  text-align: center;
+  font-family:'Abel', sans-serif;
+}
+.sign-up-link {
+  color: blue;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-family:'Abel', sans-serif;
+}
+::-moz-placeholder {
+    font-family:'Abel', sans-serif;
+}
+:-ms-input-placeholder {
+    font-family:'Abel', sans-serif;
+}
+::placeholder {
+    font-family:'Abel', sans-serif;
+}
