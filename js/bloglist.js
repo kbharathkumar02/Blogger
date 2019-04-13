@@ -19,7 +19,6 @@
     deletePostModelYes.onclick = function() {
     //stopping the propagation to parent models
         event.stopPropagation();
-          blogListModal.style.display = "none";
     }
 
 //creating the var to get th corresponding element
@@ -27,6 +26,7 @@
     var deletePostModelNo = document.getElementById(deletePostModalNoIndex)
     deletePostModelNo.onclick = function() {
         event.stopPropagation();
+        blogListModal.style.display = "none";
     }
 //stopping the propagation to parent models
     window.onclick = function(event) {
