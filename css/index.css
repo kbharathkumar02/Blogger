@@ -1,14 +1,62 @@
 body{
-   background: url('background.jpg');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center center;
-   background-size: cover;
-   margin: 0 !important;
-   background-size: 100% cover!important;
-   overflow:hidden;
-   display: block;
-} 
+  background: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-size: 100% cover!important;
+  display: block;
+  margin: 0 !important;
+  overflow:hidden;
+}
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+.postButtons {
+  left: 45%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+}
+
+button {
+  background-color: gold;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px;
+}
+
+.create-btn {
+  background-color: rgb(34,174,34);
+  border-width: 0px;
+  color: #fff;
+  cursor: pointer;
+  font-size: smaller;
+  padding: 10px;
+  margin-left: 400px;
+  margin-top: 20px;
+  width: 100px;
+}
+
+.textarea-content {
+  height: 300px;
+  background-color: #E8E8E8;
+  width: 780px;
+}
+
+.index-modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  margin: auto;
+  min-height: 40%;
+  padding: 0 15px 1px 35px;
+  width: 55%;
+}
+
+.post-title {
+  background-color: #E8E8E8;
+  border-width: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 400px;
+}
