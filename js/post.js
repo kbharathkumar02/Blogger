@@ -15,7 +15,7 @@ function editBlog(button) {
         blogTitleNew.replaceWith(editableText); //Make the blog title editable
 
         var inputblogBody = document.createElement('textarea');
-        inputblogBody.name = 'blodBody';
+        inputblogBody.name = 'blogBody';
         inputblogBody.id='txtAreablogBody';
         inputblogBody.setAttribute("class","blogText");
 
@@ -33,15 +33,15 @@ function saveButton(button){
         var blogBody = document.getElementById("txtAreablogBody");
         var parablogTitleNew = document.createElement('p');
         parablogTitleNew.name = 'parabodyTitleNew';
-        parablogTitleNew.id="parablogTitleNew";
+        parablogTitleNew.id="blogTitleNew";
 
         var editablePara = parablogTitleNew;
         editablePara.innerHTML=blogTitleNew.value;
         blogTitleNew.replaceWith(editablePara); //Modifying the blog title
 
         var parablogBody = document.createElement('p');
-        parablogBody.name = 'blodBody';
-        parablogBody.id='txtareablogBody';
+        parablogBody.name = 'blogBody';
+        parablogBody.id='blogBody';
 
         var paraBlogBody = parablogBody;
         paraBlogBody.innerHTML=blogBody.value;
